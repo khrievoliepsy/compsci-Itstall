@@ -1,0 +1,81 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #001f3f, #003366); /* Gradient background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header h1 {
+    padding: 10px 20px;
+    background-color: rgba(17, 7, 104, 0.1); /* Keep background for Welcome text */
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Menu Section Styling */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: column; /* Arrange images vertically */
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.menu-item {
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    color: #cccccc;
+    font-size: 0.9em;
+}
+.menu-item img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.menu-item:hover img {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+.menu-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.menu-item:hover img {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10); /* Add a shadow effect */
+    }
+    .menu-item{
+        width: 100%; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow parameters */
+        margin: 10px 0; /* Space around images */
+    }
